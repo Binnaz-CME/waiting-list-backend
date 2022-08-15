@@ -8,9 +8,8 @@ const knex = require("./db");
 // Socket io admin
 
 const io = new Server(server, {
-  cors: {
-    origin: ["https://admin.socket.io", "http://localhost:3000", "https://amritb.github.io/, "https://waiting-list-ba.herokuapp.com/"],
-  },
+  origin: ["https://admin.socket.io", "http://localhost:3000", "https://amritb.github.io/", https://waiting-list-ba.herokuapp.com/],
+    credentials: true
 });
 
 // Init admin
